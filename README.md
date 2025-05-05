@@ -17,3 +17,6 @@ URL tersebut sama karena baik publisher maupun subscriber **terhubung ke broker 
 
 Dengan URL yang sama itu, komunikasi antar komponen dapat terjadi secara real-time melalui message broker tersebut.
 
+
+## Message Broker: RabbitMQ
+![rabbitmq publisher](/image/rabbitmq.jpeg)
