@@ -24,3 +24,9 @@ Dengan URL yang sama itu, komunikasi antar komponen dapat terjadi secara real-ti
 ## Sending and Processing Event
 ![sending event](/image/sendingevent.jpeg)
 Ketika kita menjalankan cargo run pada subscriber, dia seperti sedang menunggu suatu data masuk. Lalu, dengan adanya message broker, yaitu RabbitMQ, dan kita menjalankan cargo run pada publisher. Lima data yang sudah disiapkan akan dikirimkan sehingga pada terminal subscriber terlihat data yang masuk, dalam sekali jalan (atau run).
+
+## Monitoring chart based on publisher
+![spike](/image/spike.jpeg)
+Lonjakan (spike) pada grafik tersebut terjadi setelah saya menjalankan `cargo run` pada publisher sebanyak 3 kali.  Setiap kali publisher dijalankan, ia mengirimkan 5 message ke message broker RabbitMQ. Sehingga total message yang dikirim adalah 15. Hal ini menyebabkan **message rate meningkat tajam** dalam waktu singkat, yang ditampilkan sebagai spike pada grafik “Message rates” di dashboard RabbitMQ.
+
+
