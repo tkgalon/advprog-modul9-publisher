@@ -20,3 +20,7 @@ Dengan URL yang sama itu, komunikasi antar komponen dapat terjadi secara real-ti
 
 ## Message Broker: RabbitMQ
 ![rabbitmq publisher](/image/rabbitmq.jpeg)
+
+## Sending and Processing Event
+![sending event](/image/sendingevent.jpeg)
+Ketika kita menjalankan cargo run pada subscriber, dia seperti sedang menunggu suatu data masuk. Lalu, dengan adanya message broker, yaitu RabbitMQ, dan kita menjalankan cargo run pada publisher. Lima data yang sudah disiapkan akan dikirimkan sehingga pada terminal subscriber terlihat data yang masuk, dalam sekali jalan (atau run).
